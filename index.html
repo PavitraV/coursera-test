@@ -1,8 +1,17 @@
-<html>
-<title>
-  Hello Coursera
-</title>
-<body>
-  <h1>Hi boo</h1>
-  </body
+<html ng-app = "myFirstApp">
+  <head>
+    <script src= "angular.min.js"></script>
+    <script src = "app.js"> </script>
+    <h1> Name calculator </h1>
+  </head>
+  <title> My first Angular JS </title>
+  <body>
+    <div ng-controller = "MyFirstController">
+      <div>
+        Your name : <input type="text" ng-model = "name"
+        ng-keyup = "displayTotal();">
+      </div>
+      <div> Total Numeric value : {{totalValue}}</div>
+   </div>
+  </body>
 </html>
